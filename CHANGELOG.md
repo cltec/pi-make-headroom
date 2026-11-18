@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Fixed the status line and `/headroom status` token counts to render with a stable English number format, so non-English locales no longer group thousands with dots and misreport savings.
+
 ## [0.3.1] - 2026-11-18
 
 - Fixed repository, badge, install, and security-advisory links after the project moved to `github.com/cltec/pi-make-headroom`; `package.json#repository` again matches the publishing repository so npm provenance validation passes.
