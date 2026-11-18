@@ -4,7 +4,7 @@ Use this guide to configure trusted publishing once, then release by merging a d
 
 ## Prerequisites
 
-- Maintainer access to `Cirius1792/pi-make-headroom`, with GitHub Actions enabled and permission to merge release PRs and create release tags.
+- Maintainer access to `cltec/pi-make-headroom`, with GitHub Actions enabled and permission to merge release PRs and create release tags.
 - Python **3.11** for the managed compatibility gate. Automated checks use fixed Pi **1.5.0**, configured in `scripts/headroom-automation.json`.
 - Ownership of npm user scope `@cltec`, or publishing permission in the npm organization `cltec`.
 - An npm account with verified email and two-factor authentication for the initial manual publication.
@@ -45,7 +45,7 @@ Open the scoped package on npm → **Settings → Trusted publishing → GitHub 
 
 | Field | Value |
 |---|---|
-| Organization or user | `Cirius1792` |
+| Organization or user | `cltec` |
 | Repository | `pi-make-headroom` |
 | Workflow filename | `release.yml` |
 | Environment name | Leave blank |

@@ -103,8 +103,8 @@ Explicit `HEADROOM_VERSION` and `config.json` version settings remain unchanged 
 The workflow must exist on GitHub's default branch, and Actions must be allowed to create PRs. After the [activation prerequisites](RELEASING.md#enable-headroom-update-automation) are satisfied, use **Actions → Headroom update → Run workflow** on `main`, or:
 
 ```bash
-gh workflow run headroom-update.yml --repo Cirius1792/pi-make-headroom --ref main
-gh run list --repo Cirius1792/pi-make-headroom --workflow headroom-update.yml
+gh workflow run headroom-update.yml --repo cltec/pi-make-headroom --ref main
+gh run list --repo cltec/pi-make-headroom --workflow headroom-update.yml
 ```
 
 Inspect the run, candidate SHA, PR state, and smoke artifact. No PR means you should distinguish “no update” or a rejected candidate from an early preparation failure. A draft means validation is failed or unproven, not approval to merge.

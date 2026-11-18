@@ -10,7 +10,7 @@
 
 Please report vulnerabilities privately through GitHub Security Advisories:
 
-https://github.com/Cirius1792/pi-make-headroom/security/advisories/new
+https://github.com/cltec/pi-make-headroom/security/advisories/new
 
 Do not open a public issue for a vulnerability.
 
