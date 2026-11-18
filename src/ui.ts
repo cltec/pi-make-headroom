@@ -46,7 +46,7 @@ export function buildStatusText(
       // The footer shows the exact saved count. Compact notation hides the
       // absolute number the user asked for; the detailed status explains the
       // percentage denominator.
-      const saved = totals.savedTokens.toLocaleString();
+      const saved = totals.savedTokens.toLocaleString("en-US");
       const percent = formatPercent(percentSaved(totals));
       return `${theme.fg("success", "✓")}${theme.fg("dim", ` Headroom up · saved ${saved} tok (${percent})`)}`;
     }
@@ -87,17 +87,17 @@ export function formatDetailedStatus(input: {
     "",
     "This session:",
     `  Requests: ${t.calls}`,
-    `  Baseline: ${t.baselineTokens.toLocaleString()} tokens`,
-    `  Sent:     ${t.compressedTokens.toLocaleString()} tokens`,
-    `  Saved:    ${t.savedTokens.toLocaleString()} tokens (${pct} of baseline, ${formatPercent(sentPct)} of sent)`,
+    `  Baseline: ${t.baselineTokens.toLocaleString("en-US")} tokens`,
+    `  Sent:     ${t.compressedTokens.toLocaleString("en-US")} tokens`,
+    `  Saved:    ${t.savedTokens.toLocaleString("en-US")} tokens (${pct} of baseline, ${formatPercent(sentPct)} of sent)`,
   ];
 
   if (input.last && input.last.tokensBefore > 0) {
     lines.push(
       "",
       "Last request:",
-      `  ${input.last.tokensBefore.toLocaleString()} -> ${input.last.tokensAfter.toLocaleString()} tokens`,
-      `  Saved: ${input.last.tokensSaved.toLocaleString()} (${formatPercent((1 - input.last.compressionRatio) * 100)})`,
+      `  ${input.last.tokensBefore.toLocaleString("en-US")} -> ${input.last.tokensAfter.toLocaleString("en-US")} tokens`,
+      `  Saved: ${input.last.tokensSaved.toLocaleString("en-US")} (${formatPercent((1 - input.last.compressionRatio) * 100)})`,
       `  Transforms: ${input.last.transforms.join(", ") || "none"}`,
     );
   }
