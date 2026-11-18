@@ -2,7 +2,7 @@
 
 **Managed [Headroom](https://pypi.org/project/headroom-ai/) context compression for [Pi](https://pi.dev) — pinned Python venv, lazy setup, no npm dependencies.**
 
-[![CI](https://github.com/Cirius1792/pi-make-headroom/actions/workflows/ci.yml/badge.svg)](https://github.com/Cirius1792/pi-make-headroom/actions/workflows/ci.yml)
+[![CI](https://github.com/cltec/pi-make-headroom/actions/workflows/ci.yml/badge.svg)](https://github.com/cltec/pi-make-headroom/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/%40cltec%2Fpi-make-headroom)](https://www.npmjs.com/package/@cltec/pi-make-headroom)
 [![license](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
@@ -53,10 +53,10 @@ pi install npm:@cltec/pi-make-headroom
 
 ```bash
 # latest main
-pi install git:github.com/Cirius1792/pi-make-headroom
+pi install git:github.com/cltec/pi-make-headroom
 
 # reproducible
-pi install git:github.com/Cirius1792/pi-make-headroom@<tag-or-commit>
+pi install git:github.com/cltec/pi-make-headroom@<tag-or-commit>
 ```
 
 ### From a local checkout
@@ -69,7 +69,7 @@ pi install /path/to/pi-make-headroom
 
 ```bash
 pi -e npm:@cltec/pi-make-headroom
-pi -e git:github.com/Cirius1792/pi-make-headroom
+pi -e git:github.com/cltec/pi-make-headroom
 pi -e /path/to/pi-make-headroom
 ```
 
@@ -77,7 +77,7 @@ pi -e /path/to/pi-make-headroom
 
 ```bash
 pi update npm:@cltec/pi-make-headroom
-pi update git:github.com/Cirius1792/pi-make-headroom
+pi update git:github.com/cltec/pi-make-headroom
 ```
 
 An extension release can update the built-in Headroom pin. Explicit `HEADROOM_VERSION` or `config.json` versions—including a version in the starter config written on first run—are preserved and take precedence over that default. Change your configuration if you want to adopt a newer pin.

@@ -19,7 +19,7 @@ Thanks for improving `pi-make-headroom`. This project is a Pi extension that ins
 ## Setup
 
 ```bash
-git clone https://github.com/Cirius1792/pi-make-headroom.git
+git clone https://github.com/cltec/pi-make-headroom.git
 cd pi-make-headroom
 npm test
 ```

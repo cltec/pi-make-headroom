@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-11-18
+
+- Fixed repository, badge, install, and security-advisory links after the project moved to `github.com/cltec/pi-make-headroom`; `package.json#repository` again matches the publishing repository so npm provenance validation passes.
+
 ## [0.3.0] - 2026-11-10
 
 - Updated the default Headroom pin from `0.43.1` to `0.44.0`.

@@ -1,6 +1,6 @@
 {
   "name": "@cltec/pi-make-headroom",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -45,11 +45,11 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cirius1792/pi-make-headroom.git"
+    "url": "git+https://github.com/cltec/pi-make-headroom.git"
   },
   "bugs": {
-    "url": "https://github.com/Cirius1792/pi-make-headroom/issues"
+    "url": "https://github.com/cltec/pi-make-headroom/issues"
   },
-  "homepage": "https://github.com/Cirius1792/pi-make-headroom#readme",
+  "homepage": "https://github.com/cltec/pi-make-headroom#readme",
   "author": "Cirius1792"
 }
