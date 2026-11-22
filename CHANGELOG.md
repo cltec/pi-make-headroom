@@ -2,7 +2,10 @@
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-11-22
+
 - Fixed the status line and `/headroom status` token counts to render with a stable English number format, so non-English locales no longer group thousands with dots and misreport savings.
+- Updated the default Headroom pin from `0.44.0` to `0.45.0`.
 
 ## [0.3.1] - 2026-11-18
 
